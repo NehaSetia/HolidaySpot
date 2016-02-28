@@ -1,0 +1,33 @@
+
+<table style="border: thin; background-color:activeborder; color:black; font-family:fantasy;" align="center" cellspacing="10"  bordercolor="black" >
+	  	<caption><h2>Please enter your details</h2></caption>
+	  	<tr>
+	  	<td>From Date</td>
+	  	<td><script type="text/javascript"
+src="calendar.aspx"></script> 
+	<input name="from_date" id="SnapHost_Calendar" type="text" />
+	  	</td>
+	  	</tr>
+	  	<tr>
+	  	<td>To Date</td>
+	  	<td><script type="text/javascript">
+$(function () {
+$("#SnapHost_Calendar2")
+.datepicker({ showOn: 'both', buttonImage: 'images/calendar.gif',
+buttonImageOnly: true, changeMonth: true, showOtherMonths: true, selectOtherMonths: true
+});});</script>
+<input name="to_date" id="SnapHost_Calendar2" type="text" /> </td>
+	  	</tr>
+	  	<tr>
+	  	<td>No of Members</td>
+	  	<td><input type="text" name="no_of_members"></td>
+	  	</tr>
+	  	<tr>
+	  	<td>No of Rooms</td>
+	  	<td><input type="text" name="no_of_rooms"></td>
+	  	</tr>
+	  	<tr>
+	  	<td><input type="submit" value="Check"></td>
+	  	<td><input type="button" value="Cancel" onclick="window.location.href='select_room.jsp';"></td>
+	  	</tr>
+</table>
